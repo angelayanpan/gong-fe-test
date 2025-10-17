@@ -1,0 +1,77 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2em;
+  padding: 2em;
+  border: 1px solid grey;
+  border-radius: 2em;
+}
+
+input {
+  margin-left: 1em;
+}
+
+.error {
+  color: red;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #b19cd9;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+
+.logout-btn {
+  margin-right: 1em;
+}
+
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tree {
+  flex: 1;
+  padding: 12px;
+}
+
+.user-tree-node {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 1px solid #b19cd9;
+  object-fit: cover;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+.tree-node-icon {
+  width: 16px;
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.child-tree-node {
+  padding-left: 24px;
+}
