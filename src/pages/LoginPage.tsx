@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { encode } from '../utils/encode';
 import { useAuth } from '../context/AuthContext';
+import type { User } from '../types/user';
 
 function LoginPage() {
     const [email, setEmail] = useState('');
@@ -28,7 +29,7 @@ function LoginPage() {
                     'https://gongfetest.firebaseio.com/users.json'
                 );
                 const users = await usersResponse.json();
-                const currentUser = users.find((u: any) => u.id === data);
+                const currentUser = users.find((u: User) => u.id === data);
                 if (currentUser) {
                     login(currentUser, users);
                     navigate('/home');
