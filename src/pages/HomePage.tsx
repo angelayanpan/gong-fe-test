@@ -7,8 +7,6 @@ function HomePage() {
     const navigate = useNavigate();
     const { currentUser, allUsers, logout, isAuthenticated } = useAuth();
 
-    console.log(buildTree(allUsers));
-
     if (!isAuthenticated) {
         return <Navigate to="/login" replace />;
     }
