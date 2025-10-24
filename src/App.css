@@ -27,8 +27,8 @@ input {
   align-items: center;
   justify-content: flex-end;
   background-color: #b19cd9;
-  padding-top:12px;
-  padding-bottom:12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .logout-btn {
