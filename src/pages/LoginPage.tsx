@@ -22,10 +22,8 @@ function LoginPage() {
             );
 
             const data = await response.json();
-            console.log(data);
 
             if (data) {
-                console.log('Login successful! UserId:', data);
                 const usersResponse = await fetch(
                     'https://gongfetest.firebaseio.com/users.json'
                 );
